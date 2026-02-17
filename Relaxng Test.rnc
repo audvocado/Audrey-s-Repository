@@ -1,0 +1,30 @@
+start= song 
+#song is the root element
+song = element song {metadata, lyrics} #song is made up of lyrics and metadata 
+metadata = element metadata {mixed{title+, characters, character+, artist, source}}
+#metadata is made up of titles, characters, character, artist, and source
+title = element title {type+, text} 
+#title is made up of musical, text, and song (Prelude and Lilacs). I gave type a + because there has to be at least one that describes what the text is being coded for
+    type= attribute type {"musical" | "song"}
+characters = element characters {characters+} 
+#characters is made up of character which in term makes up attribute "actor". Character is marked up + because there is at least 1 character in the song. 
+    character = element character {text, actor} 
+        actor = attribute actor {"Nikki M James" | "Gabriel Ebert"} #names of the actors in the attribute. Bar indicates that the actor can be Nikki or Gabriel
+artist = element artist {"Dave Malloy"} 
+source = element source {" https://genius.com/Dave-malloy-lilacs-lyrics "} 
+
+lyrics = element lyrics {mixed{direction | toneshift}* | section} 
+#lyrics is made up of both direction and toneshift. Bar is used to tell the code that direction OR toneshift will come up and precede either one. 
+    direction = element direction {text} #text within this element 
+    toneshift = element toneshift {text} #defines what toneshift is
+    section = element section {tone+, stanza+} #has to be one or more tone and stanza in the song
+        tone = attribute tone {"neutral" | "positive" | "negative"} #bar distinguished the tone depending on the part of the song. One part can only have one tone.
+        stanza = element stanza {speaker, delivery, line*, action?} #only one action. line* is mandatory when looking at something like a song
+            speaker = attribute speaker {text} #speaker works for any show
+            delivery = attribute delivery {"sung" | "spoken"} # must be one or the other
+            action = attribute action {"bringing in more lilacs"} 
+            line = element line {place* & text & chara*} #chara and place are mandatory because they are within "line".
+                place = element place {kind, text} #text stands for the cities mentioned
+                kind = attribute kind {"city" | "building" | "nature"} 
+    chara = element chara {ref, text} #text equals any text caught in between the attribute and closing tag
+        ref = attribute ref {"RACH" | "NATALYA" | "DAHL" | "TSAR"} 

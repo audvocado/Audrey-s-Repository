@@ -1,0 +1,6 @@
+Blithedale Romance Step by Step 
+Step 1. add the root element <book></book> to the very start and end. manually tag the title as <doctitle></doctitle> and the author with <author></author>
+Step 2. wrap paragraphs in <p>. find - ^(.+)$ replace - <p>$1</p>. for the chapters replace <p> tag with <chapter> find - <p>([IVXLC]+)\.\s+(.*)</p> replace -<chapter><num>$1</num><title>$2</title></chapter>
+Step 3. identify text within double quotes and wrap them in <quote> tags while preserving the quotation marks find - "([^"]+)" replace - <quote>"\1"</quote>
+Step 4. manually go into the table of contents and replace the <p> tag on each title and replace it with <title>
+Step 5. check for well formedness and you're done.
