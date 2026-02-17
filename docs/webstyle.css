@@ -164,3 +164,18 @@ img:hover {
     color: #d1d1d1; 
 }
 
+.note-1 { top: 10%; left: 5%; transform: rotate(15deg); }
+.note-2 { top: 25%; right: 8%; transform: rotate(-20deg); }
+.note-3 { top: 50%; left: 3%; transform: rotate(-10deg); }
+.note-4 { top: 75%; right: 5%; transform: rotate(25deg); }
+.note-5 { top: 90%; left: 10%; transform: rotate(-15deg); }
+
+.note {
+    position: absolute;
+    font-size: 3.5rem;  /* Made them slightly larger to catch the eye */
+    color: rgba(131, 103, 161, 0.5); /* A darker, more visible purple with 50% transparency */
+    user-select: none;
+    font-weight: bold;
+    /* Optional: adds a soft "glow" effect */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.05); 
+}
