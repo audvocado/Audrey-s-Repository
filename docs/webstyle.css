@@ -23,19 +23,25 @@ h2 {
 
 img {
     display: block;
-    margin: 0 auto;         /* Centers the image */
-    width: 300px;           /* Adjust this number to make images bigger or smaller */
-    height: 300px;          /* Matches width to keep them perfectly square */
-    object-fit: cover;      /* Crops the photo slightly if it isn't a perfect square so it doesn't stretch */
+    margin: 15px auto;      /* Centers image and adds space above it */
+    width: 100%;            /* Makes the image fill the width of the .album box */
+    max-width: 300px;       /* Keeps it from getting too giant */
+    height: 300px;          /* Forces a square shape */
+    object-fit: cover;      /* THE MAGIC PART: Fits the image perfectly into the square */
     border: 8px solid white;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .album {
-    margin-top: 60px;       /* Space above the album title */
-    margin-bottom: 60px;    /* Space below the album image */
-    text-align: center;     /* Centers your H2 and the Image */
+    background-color: #ffffff;
+    display: inline-block;
+    width: 350px;           /* The "box" the image lives in */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    vertical-align: top;
+    box-sizing: border-box;
 }
 
 img:hover {
