@@ -29,6 +29,7 @@ img {
     border-radius: 8px;
     display: block;
     margin: 0 auto;
+    transition: transform 0.3s ease;
 }
 
 .album {
@@ -46,6 +47,21 @@ img {
     text-align: center;
 }
 img:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
+    cursor: pointer;
 }
+
+.album:hover {
+    transform: translateY(-10px); /* Lifts the box up 10 pixels */
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2); /* Makes the shadow deeper as it lifts */
+    transition: all 0.3s ease;
+} 
+
+img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1); /* Makes the album cover glow slightly */
+}
+
+
+
 
