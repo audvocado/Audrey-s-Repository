@@ -179,3 +179,31 @@ img:hover {
     /* Optional: adds a soft "glow" effect */
     text-shadow: 2px 2px 4px rgba(0,0,0,0.05); 
 }
+
+/* Styling the Footer Area */
+.site-footer {
+    text-align: center;
+    padding: 60px 20px 40px 20px; /* Lots of space on top to separate from albums */
+    margin-top: 50px;
+    border-top: 1px solid rgba(129, 178, 154, 0.3); /* A very faint sage green divider */
+    color: #9a8c98;
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    color: #9d81bb; /* Your purple theme color */
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #9d81bb;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Fun hover effect to match your other buttons */
+.github-link:hover {
+    background-color: #9d81bb;
+    color: white !important;
+    transform: translateY(-2px);
+}
