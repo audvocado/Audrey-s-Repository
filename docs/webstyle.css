@@ -22,28 +22,28 @@ h2 {
 }
 
 img {
-    width: 280px !important;  /* Every image is exactly this wide */
-    height: 280px !important; /* Every image is exactly this tall */
-    max-width: 100%;
-    object-fit: cover;        /* THE FIX: Crops edges so images aren't squished */
+    width: 250px !important;  /* Shrunk slightly so it has room in the box */
+    height: 250px !important; /* Forced square */
+    object-fit: contain;      /* This keeps the whole record visible inside the square */
+    background-color: #f9f9f9; /* Optional: adds a tiny tint to the empty space */
     border-radius: 8px;
     display: block;
-    margin: 10px auto;        /* Centers image in the box */
-    transition: transform 0.3s ease;
+    margin: 0 auto;
 }
 
 .album {
     background-color: white;
-    width: 320px;           /* Every box is exactly this wide */
-    height: 450px;          /* Every box is exactly this tall */
-    display: inline-block;  /* Lets them sit side-by-side */
+    width: 320px; 
+    height: 480px; 
+    display: inline-block; 
     margin: 15px;
     padding: 20px;
     border-radius: 15px;
     vertical-align: top;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    box-sizing: border-box; /* Keeps padding from breaking the size */
-    overflow: hidden;
+    box-sizing: border-box; 
+    overflow: hidden; 
+    text-align: center;
 }
 img:hover {
     transform: scale(1.05);
