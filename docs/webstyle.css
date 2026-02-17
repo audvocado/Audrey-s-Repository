@@ -46,6 +46,12 @@ img {
     overflow: hidden; 
     text-align: center;
 }
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
 img:hover {
     transform: scale(1.1);
     cursor: pointer;
@@ -62,6 +68,28 @@ img:hover {
     filter: brightness(1.1); /* Makes the album cover glow slightly */
 }
 
+.album img {
+    cursor: pointer;
+} 
+
+/* Styling the Purple Button */
+.spotify-button {
+    display: inline-block;
+    background-color: #9d81bb; /* A soft pastel purple */
+    color: white !important;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.spotify-button:hover {
+    background-color: #8367a1; /* A slightly darker purple for the hover effect */
+    transform: scale(1.05);
+}
 
 
 
