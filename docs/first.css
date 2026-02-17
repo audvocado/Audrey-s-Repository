@@ -1,0 +1,42 @@
+body {
+    background-color: #fdf6f9; /* Soft pastel pink/white */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4a4e69; /* Deep lavender-grey for readable text */
+    line-height: 1.6;
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #9a8c98;
+    text-align: center;
+    font-size: 2.5em;
+    border-bottom: 3px double #f2cc8f; /* Pastel yellow accent */
+    padding-bottom: 20px;
+}
+
+h2 {
+    color: #81b29a; /* Pastel sage green */
+    margin-top: 30px;
+}
+
+img {
+    display: block;
+    margin: 30px auto;
+    max-width: 100%;
+    height: auto;
+    border: 8px solid white; /* Thick white border like a Polaroid */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05); /* Very soft shadow */
+    transition: transform 0.3s ease; /* Makes it interactive */
+} 
+
+img:hover {
+    transform: scale(1.02);
+}
+
+.album {
+    margin-bottom: 50px;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+} 
