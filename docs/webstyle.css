@@ -23,25 +23,24 @@ h2 {
 
 img {
     display: block;
-    margin: 15px auto;      /* Centers image and adds space above it */
-    width: 280px;           /* Makes the image fit inside the 350px box */
-    height: 280px;          /* Keeps it a perfect square */
-    object-fit: cover;      /* THIS IS THE FIX: It crops the image to fit the square perfectly */
-    border: 5px solid #f2cc8f; /* Optional: adds a cute pastel yellow border */
+    width: 100% !important; /* Forces image to be exactly as wide as the box */
+    height: 280px !important; /* Forces a consistent height for all albums */
+    object-fit: cover;      /* Crops the photo so it doesn't look squished or stretched */
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-   
+    margin-top: 10px;
 }
 
 .album {
     background-color: #ffffff;
     display: inline-block;
-    width: 350px;           /* The "box" the image lives in */
+    width: 320px;           /* Fixed width for the card */
     margin: 20px;
     padding: 20px;
     border-radius: 15px;
     vertical-align: top;
-    box-sizing: border-box;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-sizing: border-box; /* Keeps padding from stretching the box */
+    overflow: hidden;
 }
 
 img:hover {
