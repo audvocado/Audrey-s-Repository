@@ -24,13 +24,13 @@ h2 {
 img {
     display: block;
     margin: 15px auto;      /* Centers image and adds space above it */
-    width: 100%;            /* Makes the image fill the width of the .album box */
-    max-width: 300px;       /* Keeps it from getting too giant */
-    height: 300px;          /* Forces a square shape */
-    object-fit: cover;      /* THE MAGIC PART: Fits the image perfectly into the square */
-    border: 8px solid white;
+    width: 280px;           /* Makes the image fit inside the 350px box */
+    height: 280px;          /* Keeps it a perfect square */
+    object-fit: cover;      /* THIS IS THE FIX: It crops the image to fit the square perfectly */
+    border: 5px solid #f2cc8f; /* Optional: adds a cute pastel yellow border */
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+   
 }
 
 .album {
