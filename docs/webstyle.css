@@ -1,11 +1,8 @@
 body {
-    background-color: #fdf6f9; /* Soft pastel pink/white */
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #4a4e69; /* Deep lavender-grey for readable text */
-    line-height: 1.6;
-    padding: 40px;
-    max-width: 900px;
-    margin: 0 auto;
+    background-color: #fdf6f9; /* Pastel background */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
 }
 
 h1 {
@@ -18,32 +15,37 @@ h1 {
 
 h2 {
     color: #81b29a; /* Pastel sage green */
-    margin-top: 30px;
+    margin-top: 10px;
+    font-size: 1.2em;
+    height: 50px; 
+    overflow: hidden;
 }
 
 img {
+    width: 280px !important;  /* Every image is exactly this wide */
+    height: 280px !important; /* Every image is exactly this tall */
+    max-width: 100%;
+    object-fit: cover;        /* THE FIX: Crops edges so images aren't squished */
+    border-radius: 8px;
     display: block;
-    width: 100% !important; /* Forces image to be exactly as wide as the box */
-    height: 280px !important; /* Forces a consistent height for all albums */
-    object-fit: cover;      /* Crops the photo so it doesn't look squished or stretched */
-    border-radius: 10px;
-    margin-top: 10px;
+    margin: 10px auto;        /* Centers image in the box */
+    transition: transform 0.3s ease;
 }
 
 .album {
-    background-color: #ffffff;
-    display: inline-block;
-    width: 320px;           /* Fixed width for the card */
-    margin: 20px;
+    background-color: white;
+    width: 320px;           /* Every box is exactly this wide */
+    height: 450px;          /* Every box is exactly this tall */
+    display: inline-block;  /* Lets them sit side-by-side */
+    margin: 15px;
     padding: 20px;
     border-radius: 15px;
     vertical-align: top;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    box-sizing: border-box; /* Keeps padding from stretching the box */
+    box-sizing: border-box; /* Keeps padding from breaking the size */
     overflow: hidden;
 }
-
 img:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
