@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html {
     scroll-behavior: smooth;
 }
@@ -207,3 +208,214 @@ img:hover {
     color: white !important;
     transform: translateY(-2px);
 }
+=======
+html {
+    scroll-behavior: smooth;
+}
+
+#album-gallery, #assignment-blurb {
+    padding-top: 80px; 
+    margin-top: -80px;
+    display: block;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #81b29a; /* Your Sage Green */
+    padding: 10px 0;
+    position: sticky;          /* This keeps it at the top when you scroll! */
+    top: 0;
+    z-index: 1000;             /* Ensures it stays above the album boxes */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f2cc8f; /* Pastel yellow highlight on hover */
+}
+
+
+body {
+    background-color: #fdf6f9; /* Pastel background */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #9a8c98;
+    text-align: center;
+    font-size: 2.5em;
+    border-bottom: 3px double #f2cc8f; /* Pastel yellow accent */
+    padding-bottom: 20px;
+}
+
+h2 {
+    color: #81b29a; /* Pastel sage green */
+    margin-top: 10px;
+    font-size: 1.2em;
+    height: 50px; 
+    overflow: hidden;
+}
+
+img {
+    width: 250px !important;  /* Shrunk slightly so it has room in the box */
+    height: 250px !important; /* Forced square */
+    object-fit: contain;      /* This keeps the whole record visible inside the square */
+    background-color: #f9f9f9; /* Optional: adds a tiny tint to the empty space */
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.album {
+    background-color: white;
+    width: 320px; 
+    height: 550px !important; 
+    display: inline-block; 
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    vertical-align: top;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-sizing: border-box; 
+    overflow: hidden; 
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.album:hover {
+    transform: translateY(-10px); /* Lifts the box up 10 pixels */
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2); /* Makes the shadow deeper as it lifts */
+    transition: all 0.3s ease;
+} 
+
+img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1); /* Makes the album cover glow slightly */
+}
+
+.album img {
+    cursor: pointer;
+} 
+
+/* Styling the Purple Button */
+.spotify-button {
+    display: inline-block;
+    background-color: #9d81bb; /* A soft pastel purple */
+    color: white !important;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.spotify-button:hover {
+    background-color: #8367a1; /* A slightly darker purple for the hover effect */
+    transform: scale(1.05);
+}
+
+.rating {
+    font-size: 1.1em;
+    color: #9a8c98; 
+    margin: 10px 0;
+}
+
+.stars {
+    color: #f2cc8f; 
+}
+
+/* This makes the 'rating' paragraph (and the star outside the span) grey */
+.rating {
+    color: #d1d1d1; 
+}
+
+.note-1 { top: 10%; left: 5%; transform: rotate(15deg); }
+.note-2 { top: 25%; right: 8%; transform: rotate(-20deg); }
+.note-3 { top: 50%; left: 3%; transform: rotate(-10deg); }
+.note-4 { top: 75%; right: 5%; transform: rotate(25deg); }
+.note-5 { top: 90%; left: 10%; transform: rotate(-15deg); }
+
+.note {
+    position: absolute;
+    font-size: 3.5rem;  /* Made them slightly larger to catch the eye */
+    color: rgba(131, 103, 161, 0.5); /* A darker, more visible purple with 50% transparency */
+    user-select: none;
+    font-weight: bold;
+    /* Optional: adds a soft "glow" effect */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.05); 
+}
+
+/* Styling the Footer Area */
+.site-footer {
+    text-align: center;
+    padding: 60px 20px 40px 20px; /* Lots of space on top to separate from albums */
+    margin-top: 50px;
+    border-top: 1px solid rgba(129, 178, 154, 0.3); /* A very faint sage green divider */
+    color: #9a8c98;
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    color: #9d81bb; /* Your purple theme color */
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #9d81bb;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Fun hover effect to match your other buttons */
+.github-link:hover {
+    background-color: #9d81bb;
+    color: white !important;
+    transform: translateY(-2px);
+}
+>>>>>>> 1d1ba9723f2b520deebc3f4c9a9e341e7199a354
