@@ -2,13 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
-#album-gallery, #assignment-blurb {
+.genre-section, #assignment-blurb {
     display: flex;         
     flex-wrap: wrap;       
-    justify-content: center; 
-    gap: 20px;            
-    padding-top: 80px; 
-    margin-top: -80px;
+    justify-content: center;
 }
 
 .album-grid {
