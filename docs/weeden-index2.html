@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="weeden-webstyle2.css" />
     </head>
     <body>
+        <div id="top"></div>
         <div class="background-decor">
             <span class="note note-1">♪</span>
             <span class="note note-2">♫</span>
@@ -19,16 +20,23 @@
             <span class="note note-7">♩</span>
         </div>
         <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="#" class="nav-logo">AW Music</a>
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li> 
-                    <li><a href="#album-gallery">Albums</a></li>
-                    <li><a href="#assignment-blurb">About</a></li> 
-                </ul>
-            </div>
-        </nav>
+            <nav class="navbar">
+                <div class="nav-container">
+                    <a href="#" class="nav-logo">AW Music</a>
+                    <ul class="nav-links">
+                        <li><a href="#">Home</a></li> 
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">Genres ▼</a>
+                            <div class="dropdown-content">
+                                <a href="#pop">Pop</a>
+                                <a href="#rock">Rock &amp; Indie</a>
+                                <a href="#folk">Folk &amp; Acoustic</a>
+                            </div>
+                        </li>
+                        <li><a href="#assignment-blurb">About</a></li> 
+                    </ul>
+                </div>
+            </nav>
         <h1>Audrey's Favorite Songs</h1>
         </header>
         
@@ -40,9 +48,12 @@
         
             <section id="album-gallery">
             <h2>My Recent Favorites</h2>
-       
-        <article class="album">
-            <h2>Sabrina Carpenter – Man's Best Friend</h2>
+                
+         <section id="pop" class="genre-section">
+             <h2>Pop</h2>
+             <div class="album-grid">
+                 <article class="album">
+                     <h3>Sabrina Carpenter – Man's Best Friend</h3>
             <a href="https://www.youtube.com/watch?v=aSugSGCC12I" target="_blank">
                 <img src="mans-best-friend.jpg" alt="Sabrina Carpenter" />
             </a>
@@ -50,103 +61,114 @@
                 Rating: <span class="stars">★★★★★</span>
                 <a href="https://open.spotify.com/album/1aqg30bNvLSWgShZgX4oop" target="_blank" class="spotify-button">Listen on Spotify</a>
             </p>
+                 </article>
+                 <article class="album">
+                     <h3>Suki Waterhouse – I Can't Let Go</h3>
+                     <a href="https://www.youtube.com/watch?v=exTERXm8g_s" target="_blank">
+                         <img src="i-cant-let-go.jpg" alt="I Can't Let Go Album Cover" />
+                     </a>
+                     <p class="rating">
+                         Rating: <span class="stars">★★★★</span>
+                         <a href="https://open.spotify.com/album/2ccGlDnYg0D9qAZHDq55Vm?trackId=0mflMxspEfB0VbI1kyLiAv" target="_blank" class="spotify-button">Listen on Spotify</a>
+                     </p>
+                 
         </article>
-        
-        <article class="album">
-            <h2>Noah Kahan – Stick Season</h2>
-            <a href="https://www.youtube.com/watch?v=JKrDdsgXuso" target="_blank">
-                <img src="stick-season.jpg" alt="Stick Season Album Cover" />
-            </a>
-            <p class="rating">
-                Rating: <span class="stars">★★★★⯨</span>
-                <a href="https://open.spotify.com/album/50ZenUP4O2Q5eCy2NRNvuz?trackId=0mflMxspEfB0VbI1kyLiAv" target="_blank" class="spotify-button">Listen on Spotify</a>
-            </p>
-        </article>
-        
-        <article class="album">
-            <h2>Foo Fighters – Greatest Hits</h2>
-            <a href="https://www.youtube.com/watch?v=eBG7P-K-r1Y" target="_blank">
-                <img src="foo-fighters.jpg" alt="Foo Fighters Greatest Hits" />
-            </a>
-            <p class="rating">
-                Rating: <span class="stars">★★★★★</span>
-                <a href="https://open.spotify.com/album/1zCNrbPpz5OLSr6mSpPdKm?trackId=0mflMxspEfB0VbI1kyLiAv" target="_blank" class="spotify-button">Listen on Spotify</a>
-            </p>
-        </article>
-        <article class="album">
-            <h2>Florence + The Machine – Ceremonials</h2>
-            <a href="https://www.youtube.com/watch?v=WbN0nX61rIs" target="_blank">
-                <img src="ceremonials.jpg" alt="Ceremonials Album Cover" />
-            </a>
-            <p class="rating">
-                Rating: <span class="stars">★★★★</span>★
-                <a href="https://open.spotify.com/album/3tFAP5BTa1lwUp7lLJ9FlG?trackId=0mflMxspEfB0VbI1kyLiAv" target="_blank" class="spotify-button">Listen on Spotify</a>
-            </p>
-        </article>
-        <article class="album">
-            <h2>Fleetwood Mac – Rumours</h2>
-            <a href="https://www.youtube.com/watch?v=mwgg1Pu6cNg" target="_blank">
-                <img src="rumours.jpg" alt="Rumours Album Cover" />
-            </a>
-            <p class="rating">
-                Rating: <span class="stars">★★★★⯨</span>
-                <a href="https://open.spotify.com/album/1bt6q2SruMsBtcerNVtpZB?trackId=0mflMxspEfB0VbI1kyLiAv" target="_blank" class="spotify-button">Listen on Spotify</a>
-                    </p>
-            </article>
-                <article class="album">
-                    <h2>Tame Impala – Currents</h2>
-                    <a href="https://open.spotify.com/album/79dL7FLiJFOO0EoehUHQBv?trackId=0mflMxspEfB0VbI1kyLiAv" target="_blank">
-                        <img src="currents.jpg" alt="Currents Album Cover" />
-                    </a>
-                    <p class="rating">
-                        Rating: <span class="stars">★★★★★</span>
-                        <a href="https://www.youtube.com/watch?v=pFptt7Cargc" target="_blank" class="spotify-button">Listen on Spotify</a>
-                    </p>
-                </article>
+             </div>
+         </section>
                 
-                <article class="album">
-                    <h2>Kacey Musgraves – Deeper Well</h2>
-                    <a href="https://open.spotify.com/album/5SxZmGwc4eJuPp6PcO4JgJ?trackId=0mflMxspEfB0VbI1kyLiAv" target="_blank">
-                        <img src="deeper-well.jpg" alt="Deeper Well Album Cover" />
-                    </a>
-                    <p class="rating">
-                        Rating: <span class="stars">★★★★⯨</span>
-                        <a href="https://www.youtube.com/watch?v=TGkMYMxi-hw" target="_blank" class="spotify-button">Listen on Spotify</a>
-                    </p>
-                </article>
                 
-                <article class="album">
-                    <h2>The Killers – Hot Fuss</h2>
-                    <a href="https://open.spotify.com/album/4piJq7R3gjUOxnYs6lDCTg?trackId=0mflMxspEfB0VbI1kyLiAv" target="_blank">
-                        <img src="hot-fuss.jpg" alt="Hot Fuss Album Cover" />
-                    </a>
-                    <p class="rating">
-                        Rating: <span class="stars">★★★★★</span>
-                        <a href="https://www.youtube.com/watch?v=sZTpLvsYYHw" target="_blank" class="spotify-button">Listen on Spotify</a>
-                    </p>
-                </article>
+                <section id="rock" class="genre-section">
+                    <h2>Rock &amp; Indie</h2>
+                    <div class="album-grid">
+                        <article class="album">
+                            <h3>Foo Fighters – Greatest Hits</h3>
+                            <a href="https://www.youtube.com/watch?v=eBG7P-K-r1Y" target="_blank">
+                                <img src="foo-fighters.jpg" alt="Foo Fighters Greatest Hits" />
+                            </a>
+                            <p class="rating">
+                                Rating: <span class="stars">★★★★★</span>
+                                <a href="https://open.spotify.com/album/1zCNrbPpz5OLSr6mSpPdKm?trackId=0mflMxspEfB0VbI1kyLiAv" target="_blank" class="spotify-button">Listen on Spotify</a>
+                            </p>
+                        </article>
+                        
+                        <article class="album">
+                            <h3>The Killers – Hot Fuss</h3>
+                            <a href="https://www.youtube.com/watch?v=sZTpLvsYYHw" target="_blank">
+                                <img src="hot-fuss.jpg" alt="Hot Fuss Album Cover" />
+                            </a>
+                            <p class="rating">
+                                Rating: <span class="stars">★★★★★</span>
+                                <a href="https://open.spotify.com/album/4piJq7R3gjUOxnYs6lDCTg?trackId=0mflMxspEfB0VbI1kyLiAv" target="_blank" class="spotify-button">Listen on Spotify</a>
+                            </p>
+                        </article>
+                        
+                        <article class="album">
+                            <h3>Tame Impala – Currents</h3>
+                            <a href="https://open.spotify.com/album/79dL7FLiJFOO0EoehUHQBv?trackId=0mflMxspEfB0VbI1kyLiAv" target="_blank">
+                                <img src="currents.jpg" alt="Currents Album Cover" />
+                            </a>
+                            <p class="rating">
+                                Rating: <span class="stars">★★★★★</span>
+                                <a href="https://www.youtube.com/watch?v=pFptt7Cargc" target="_blank" class="spotify-button">Listen on Spotify</a>
+                            </p>
+                        </article>
+                    </div>
+                </section>
                 
-                <article class="album">
-                    <h2>Suki Waterhouse – I Can't Let Go</h2>
-                    <a href="https://open.spotify.com/album/2ccGlDnYg0D9qAZHDq55Vm?trackId=0mflMxspEfB0VbI1kyLiAv" target="_blank">
-                        <img src="i-cant-let-go.jpg" alt="I Can't Let Go Album Cover" />
-                    </a>
-                    <p class="rating">
-                        Rating: <span class="stars">★★★★</span>
-                        <a href="https://www.youtube.com/watch?v=exTERXm8g_s" target="_blank" class="spotify-button">Listen on Spotify</a>
-                    </p>
-                </article>
-                
-          </section>
-        </main> 
-        
+                <section id="folk" class="genre-section">
+                    <h2>Folk &amp; Acoustic</h2>
+                    <div class="album-grid">
+                        <article class="album">
+                            <h3>Noah Kahan – Stick Season</h3>
+                            <a href="https://www.youtube.com/watch?v=JKrDdsgXuso" target="_blank">
+                                <img src="stick-season.jpg" alt="Stick Season Album Cover" />
+                            </a>
+                            <p class="rating">
+                                Rating: <span class="stars">★★★★&#11240;</span>
+                                <a href="https://open.spotify.com/album/50ZenUP4O2Q5eCy2NRNvuz?trackId=0mflMxspEfB0VbI1kyLiAv" target="_blank" class="spotify-button">Listen on Spotify</a>
+                            </p>
+                        </article>
+                        
+                        <article class="album">
+                            <h3>Kacey Musgraves – Deeper Well</h3>
+                            <a href="https://www.youtube.com/watch?v=TGkMYMxi-hw" target="_blank">
+                                <img src="deeper-well.jpg" alt="Deeper Well Album Cover" />
+                            </a>
+                            <p class="rating">
+                                Rating: <span class="stars">★★★★&#11240;</span>
+                                <a href="https://open.spotify.com/album/5SxZmGwc4eJuPp6PcO4JgJ?trackId=0mflMxspEfB0VbI1kyLiAv" target="_blank" class="spotify-button">Listen on Spotify</a>
+                            </p>
+                        </article>
+                        
+                        <article class="album">
+                            <h3>Florence + The Machine – Ceremonials</h3>
+                            <a href="https://www.youtube.com/watch?v=WbN0nX61rIs" target="_blank">
+                                <img src="ceremonials.jpg" alt="Ceremonials Album Cover" />
+                            </a>
+                            <p class="rating">
+                                Rating: <span class="stars">★★★★★</span>
+                                <a href="https://open.spotify.com/album/3tFAP5BTa1lwUp7lLJ9FlG?trackId=0mflMxspEfB0VbI1kyLiAv" target="_blank" class="spotify-button">Listen on Spotify</a>
+                            </p>
+                        </article>
+                        
+                        <article class="album">
+                            <h3>Fleetwood Mac – Rumours</h3>
+                            <a href="https://www.youtube.com/watch?v=mwgg1Pu6cNg" target="_blank">
+                                <img src="rumours.jpg" alt="Rumours Album Cover" />
+                            </a>
+                            <p class="rating">
+                                Rating: <span class="stars">★★★★&#11240;</span>
+                                <a href="https://open.spotify.com/album/1bt6q2SruMsBtcerNVtpZB?trackId=0mflMxspEfB0VbI1kyLiAv" target="_blank" class="spotify-button">Listen on Spotify</a>
+                            </p>
+                        </article>
+                    </div> 
+                </section>
+            </section></main>
+         
         <footer class="site-footer">
-            <div class="footer-content">
-                <p>© 2026 Audrey Weeden | Digital Humanities</p>
-                <a href="https://github.com/audvocado" target="_blank" class="github-link">
-                    View my GitHub Profile
-                </a>
-            </div>
+            <p>© 2026 Audrey Weeden | Digital Humanities</p>
+            <a href="https://github.com/audvocado" target="_blank" class="github-link">GitHub Profile</a>
         </footer>
-    </body>
+        <a href="#top" class="back-to-top">↑</a>
+    </body> 
 </html>

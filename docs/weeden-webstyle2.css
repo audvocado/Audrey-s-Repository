@@ -11,6 +11,34 @@ html {
     margin-top: -80px;
 }
 
+.album-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.genre-section h2 {
+    font-size: 2.2rem;
+    color: #81b29a;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(129, 178, 154, 0.2);
+    display: inline-block;
+    padding: 0 30px 10px;
+    min-height: auto; 
+}
+
+.album {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: auto;
+    min-height: 580px; 
+} 
+
+
 
 .navbar {
     background-color: #81b29a; 
@@ -225,4 +253,67 @@ img:hover {
     background-color: #9d81bb;
     color: white !important;
     transform: translateY(-2px);
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    z-index: 1001; /* Keeps it above the sticky navbar */
+    border-radius: 8px;
+    top: 100%;
+    left: 0;
+} 
+
+
+.dropdown-content a {
+    color: #81b29a !important; /* Forces green text on white background */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 0.9em;
+} 
+
+
+.dropdown-content a:hover {
+    background-color: #fdf6f9;
+    color: #9d81bb !important;
+} 
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #81b29a;
+    color: white !important;
+    text-align: center;
+    line-height: 45px; 
+    font-size: 24px;
+    border-radius: 50%; 
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 2000; 
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #9d81bb; 
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
