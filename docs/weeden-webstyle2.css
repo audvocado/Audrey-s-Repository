@@ -318,14 +318,17 @@ img:hover {
 }
 
 .genre-section h2, .genre-header {
+    display: block !important;    
+    width: 100% !important;       
     text-align: center !important; 
-    display: block !important;
-    width: fit-content;            
-    margin: 40px auto !important;  
-    color: #81b29a;
-    font-size: 2.5rem;
-    border-bottom: 2px solid rgba(129, 178, 154, 0.4);
-    padding-bottom: 10px;
-    height: auto !important;
-    min-height: 0 !important;
+    margin: 40px 0 20px 0;        
+    clear: both;
+}
+.genre-section h2::after {
+    content: '';
+    display: block;
+    width: 100px;                 
+    height: 3px;
+    background-color: #81b29a;    
+    margin: 10px auto 0 auto;     
 }
