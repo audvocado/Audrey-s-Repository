@@ -243,14 +243,14 @@ img:hover {
 }
 
 .dropdown-content {
-    display: none; 
+    display: none;
     position: absolute;
     background-color: #ffffff;
-    min-width: 180px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
-    z-index: 1001; /* Keeps it above the sticky navbar */
+    min-width: 200px; 
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 9999 !important; 
     border-radius: 8px;
-    top: 100%;
+    top: 100%; 
     left: 0;
 } 
 
@@ -272,6 +272,12 @@ img:hover {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+.genre-section {
+    padding-top: 100px;     
+    margin-top: -100px;    
+    display: block;        
 }
 
 
