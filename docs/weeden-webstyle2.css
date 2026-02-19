@@ -3,9 +3,12 @@ html {
 }
 
 #album-gallery, #assignment-blurb {
+    display: flex;         
+    flex-wrap: wrap;       
+    justify-content: center; 
+    gap: 20px;            
     padding-top: 80px; 
     margin-top: -80px;
-    display: block;
 }
 
 
@@ -52,7 +55,7 @@ html {
 }
 
 .nav-links a:hover {
-    color: #f2cc8f; /* Pastel yellow highlight on hover */
+    color: #f2cc8f; 
 }
 
 
@@ -88,16 +91,18 @@ main { max-width: 1200px;
 
 h2 {
     color: #81b29a; 
-    margin-top: 10px;
-    font-size: 1.2em;
-    height: 50px; 
-    overflow: hidden;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    height: auto;          
+    min-height: 60px;      
+    overflow: visible;
 }
 
 img {
-    width: 250px !important;  
-    height: 250px !important; 
-    object-fit: contain;      
+    width: 100%;           
+    max-width: 250px;      
+    height: 250px; 
+    object-fit: cover;     
     background-color: #f9f9f9; 
     border-radius: 8px;
     display: block;
@@ -108,9 +113,9 @@ img {
 .album {
     background-color: white;
     width: 320px; 
-    height: 550px !important; 
-    display: inline-block; 
-    margin: 15px;
+    min-height: 550px; 
+    height: auto; 
+    flex: 0 1 320px;
     padding: 20px;
     border-radius: 15px;
     vertical-align: top;
@@ -131,24 +136,24 @@ img:hover {
 }
 
 .album:hover {
-    transform: translateY(-10px); /* Lifts the box up 10 pixels */
-    box-shadow: 0 12px 24px rgba(0,0,0,0.2); /* Makes the shadow deeper as it lifts */
+    transform: translateY(-10px); 
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2); 
     transition: all 0.3s ease;
 } 
 
 img:hover {
     transform: scale(1.05);
-    filter: brightness(1.1); /* Makes the album cover glow slightly */
+    filter: brightness(1.1); 
 }
 
 .album img {
     cursor: pointer;
 } 
 
-/* Styling the Purple Button */
+
 .spotify-button {
     display: inline-block;
-    background-color: #9d81bb; /* A soft pastel purple */
+    background-color: #9d81bb; 
     color: white !important;
     padding: 10px 20px;
     margin-top: 15px;
@@ -160,7 +165,7 @@ img:hover {
 }
 
 .spotify-button:hover {
-    background-color: #8367a1; /* A slightly darker purple for the hover effect */
+    background-color: #8367a1; 
     transform: scale(1.05);
 }
 
@@ -174,7 +179,7 @@ img:hover {
     color: #f2cc8f; 
 }
 
-/* This makes the 'rating' paragraph (and the star outside the span) grey */
+
 .rating {
     color: #d1d1d1; 
 }
@@ -187,20 +192,19 @@ img:hover {
 
 .note {
     position: absolute;
-    font-size: 3.5rem;  /* Made them slightly larger to catch the eye */
-    color: rgba(131, 103, 161, 0.5); /* A darker, more visible purple with 50% transparency */
+    font-size: 3.5rem;  
+    color: rgba(131, 103, 161, 0.5); 
     user-select: none;
     font-weight: bold;
-    /* Optional: adds a soft "glow" effect */
     text-shadow: 2px 2px 4px rgba(0,0,0,0.05); 
 }
 
-/* Styling the Footer Area */
+
 .site-footer {
     text-align: center;
-    padding: 60px 20px 40px 20px; /* Lots of space on top to separate from albums */
+    padding: 60px 20px 40px 20px; 
     margin-top: 50px;
-    border-top: 1px solid rgba(129, 178, 154, 0.3); /* A very faint sage green divider */
+    border-top: 1px solid rgba(129, 178, 154, 0.3); 
     color: #9a8c98;
 }
 
@@ -208,7 +212,7 @@ img:hover {
     display: inline-block;
     margin-top: 15px;
     padding: 8px 15px;
-    color: #9d81bb; /* Your purple theme color */
+    color: #9d81bb; 
     text-decoration: none;
     font-weight: bold;
     border: 1px solid #9d81bb;
@@ -216,7 +220,7 @@ img:hover {
     transition: all 0.3s ease;
 }
 
-/* Fun hover effect to match your other buttons */
+
 .github-link:hover {
     background-color: #9d81bb;
     color: white !important;
